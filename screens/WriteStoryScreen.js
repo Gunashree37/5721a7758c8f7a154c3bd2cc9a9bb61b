@@ -69,7 +69,13 @@ export default class WriteStoryScreen extends React.Component {
                     placeholderTextColor='black'
                     value={this.state.storyText}
                     style={styles.storyText}
-                    multiline={true}/>
+                    //multiline=!false
+                    //multiline=false
+                    //multiline=true
+                    //multiline={true}
+
+
+/>
                 
                 <TouchableOpacity
                     style={styles.submitButton}
