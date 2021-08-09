@@ -20,12 +20,18 @@ const TabNavigator = createBottomTabNavigator({
 {
   defaultNavigationOptions: ({navigation})=>({
     tabBarIcon: ()=>{
-      const routeName = navigation.state.routeName;
+      //const routeName = routeName;
+       //const routeName = navigation.state.routeName;
+       //const routeName = navigation.state;
+       //const routeName = state.routeName;
       console.log(routeName)
       if(routeName === "WriteStory"){
         return(
           <Image
-          source={require("./assets/write.png")}
+          //source={require("./assets/write.png")}
+          //source={require("assets/write.png")}
+          //source={require("write.png")}
+          //source={require(./assets/write.png)}
           style={{width:40, height:40}}
         />
         )
@@ -34,7 +40,10 @@ const TabNavigator = createBottomTabNavigator({
       else if(routeName === "ReadStory"){
         return(
           <Image
-          source={require("./assets/read.png")}
+          //source={require("assets/read.png")}
+          //source={require("read.png")}          
+          //source={require("./assets/read.png")}
+          //source={require(./assets/read.png)}
           style={{width:40, height:40}}
         />)
         
